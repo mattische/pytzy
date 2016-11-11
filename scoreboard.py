@@ -23,8 +23,8 @@ def setPlayers(playerList):
 def createScoreList():
     """ creates, and returns, a dict with possible scoer names in yatzy.
     """
-    scores = {"Ones": 0, 
-              "Twos": 0, 
+    scores = {"Ones": 0,
+              "Twos": 0,
               "Threes": 0,
               "Fours": 0,
               "Fives": 0,
@@ -40,11 +40,11 @@ def createScoreList():
               "Yatzy": 0}
     return scores
 
-            
+
 def insertScore(player_index, score_list_name, points):
     """ insert a score for a cetain score-name and a certain player
     """
-    
+
     if player_index >= len(players):
        return False
 
@@ -66,14 +66,14 @@ def calcPlayerTotal(player_index):
 
 
 def getPlayerTotal(player_index):
-    """ get the total scoer of a player
+    """ get the total score of a player
     """
     if player_index >= len(players):
        return False
-       
+
     return calcPlayerTotal(player_index)
 
 
-    
+
 def getPlayerName(index):
     return players[index]["name"]
